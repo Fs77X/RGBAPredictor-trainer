@@ -22,6 +22,7 @@ function setup() {
   wa = new hoverText("White and Alpha", 850, height / 2, 1035, 228, 390, 90, 20);
   button = createButton('Download!');
   button.style('background-color', 'rgba(76, 175, 80, 50)');
+  button.class('no-copy');
   button.size(100, 50);
   button.mouseOver(onTop).mouseOut(outside);
   button.mousePressed(function () {
